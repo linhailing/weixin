@@ -1,0 +1,9 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="container">
+    <viwe class="wrapper">
+        <input placeholder="出发城市" class="input"/>
+        <input placeholder="到达城市" class="input"/>
+        <input placeholder="2017-07-07" class="input"/>
+        <button type="primary" class="sub">开始搜索</button>
+    </viwe>
+</view>
