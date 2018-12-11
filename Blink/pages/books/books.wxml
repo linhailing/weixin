@@ -1,0 +1,14 @@
+<!--pages/books/books.wxml-->
+<view class="books">
+    <view class="books-header">
+
+    </view>
+    <view class="books-body">
+        <view class="books-body-header">
+            <image src="/images/book-title.png" />
+        </view>
+        <navigator class="list" wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i" url="/pages/books/detail/detail?id={{i}}" hover-class="navigator-hover">
+            <cmp_book_list  />
+        </navigator>
+    </view>
+</view>

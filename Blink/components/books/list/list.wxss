@@ -1,0 +1,7 @@
+/* components/books/list/list.wxss */
+.items{ display: inline-flex;flex-direction: column;margin-bottom: 20rpx; margin-right: 10rpx;}
+.items image{width: 350rpx;height: 350rpx;border-top-left-radius: 10rpx;border-top-right-radius: 10rpx; }
+.items .item-body{ display: inline-flex;flex-direction: column;padding:30rpx;background: #fff;border-bottom-left-radius: 10rpx;border-bottom-right-radius: 10rpx; }
+.items .item-body .title{ font-size: 30rpx; }
+.items .item-body .author{ font-size: 24rpx;color: #ddd; }
+.items .item-body .other{ font-size: 24rpx;color: #ddd;text-align: right; }

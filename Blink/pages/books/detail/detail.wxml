@@ -1,0 +1,20 @@
+<!--pages/books/detail/detail.wxml-->
+<view class="detail">
+    <view class="detail-header">
+        <cmp_book />
+    </view>
+    <view class="detail-body">
+        <view class="book-content">
+            <text class="book-content-title">内容简介</text>
+            <text class="book-content-info">王小波书信均选自朝花出版社2014年4月第一版《爱你就像爱生命》，此书系王小波生前从未发表过李银河的"两地书，也是迄今他们夫妇最完整和独立的一本书信集。</text>
+        </view>
+        <view class="book-info">
+            <text class="book-info-title">书本信息</text>
+            <view class="book-info-desc">
+                <view><text>出版社</text><text class="txt">上海锦绣文章出版社</text></view>
+                <view><text>出版年</text><text class="txt">2018-5</text></view>
+                <view><text>定价</text><text class="txt">¥18.00元</text></view>
+            </view>
+        </view>
+    </view>
+</view>

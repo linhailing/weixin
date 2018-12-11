@@ -2,28 +2,30 @@
   "pages": [
     "pages/classes/classes",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/books/books",
+    "pages/books/detail/detail"
   ],
   "tabBar": {
     "list": [
-        {
-          "pagePath": "pages/classes/classes",
-          "text": "流行",
-          "iconPath": "images/classic.png",
-          "selectedIconPath": "images/classic@highlight.png"
-        },
-        {
-          "pagePath": "pages/index/index",
-          "text": "书单",
-          "iconPath": "images/book.png",
-          "selectedIconPath": "images/book@highlight.png"
-        },
-        {
-          "pagePath": "pages/logs/logs",
-          "text": "喜欢",
-          "iconPath": "images/my.png",
-          "selectedIconPath": "images/my@highlight.png"
-        }
+      {
+        "pagePath": "pages/classes/classes",
+        "text": "流行",
+        "iconPath": "images/classic.png",
+        "selectedIconPath": "images/classic@highlight.png"
+      },
+      {
+        "pagePath": "pages/books/books",
+        "text": "书单",
+        "iconPath": "images/book.png",
+        "selectedIconPath": "images/book@highlight.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "喜欢",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my@highlight.png"
+      }
     ]
   },
   "window": {

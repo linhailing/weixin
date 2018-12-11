@@ -1,0 +1,9 @@
+<!--components/books/list/list.wxml-->
+<view class="items">
+    <image src="images/books.jpg" />
+    <view class="item-body">
+        <text class="title">爱你就像爱生命</text>
+        <text class="author">李银河</text>
+        <text class="other">233喜欢 . 68短评</text>
+    </view>    
+</view>

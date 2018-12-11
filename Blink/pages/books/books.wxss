@@ -1,0 +1,6 @@
+/* pages/books/books.wxss */
+.list{display: inline-block;}
+.books{}
+.books .books-body{ background: #f0f0f0;padding: 40rpx 0rpx 40rpx 20rpx; }
+.books .books-body .books-body-header{ text-align: center;}
+.books .books-body .books-body-header image{width: 107rpx;height: 34px;}

@@ -1,0 +1,10 @@
+/* pages/books/detail/detail.wxss */
+.detail{ background: #f0f0f0; }
+.detail .detail-header{display: flex;align-items: center;justify-content: center;background: #fff;}
+.detail .detail-body{}
+.detail .detail-body .book-content, .detail .detail-body .book-info{margin-top: 20rpx;background: #fff;padding: 20rpx; }
+.detail .detail-body .book-content .book-content-title,.detail .detail-body .book-info .book-info-title{display: block;text-align: center;font-size: 48rpx;}
+.detail .detail-body .book-content .book-content-info{ font-size: 28rpx; line-height: 28rpx; }
+.detail .detail-body .book-info-desc{ display: flex;flex-direction: column; font-size: 28rpx;padding: 20rpx; }
+.detail .detail-body .book-info-desc view{margin-top: 10rpx;}
+.detail .detail-body .book-info-desc view .txt{margin-left: 20rpx;}
