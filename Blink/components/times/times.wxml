@@ -1,0 +1,11 @@
+<!--components/times/times.wxml-->
+<view class="times">
+    <view class="times-title">
+        <text class="times-no">No.</text>
+        <text class="times-num">17</text>
+    </view>
+    <view class="times-date">
+        <text class="date-mouth">三月</text>
+        <text class="date-year">2018</text>
+    </view>
+</view>

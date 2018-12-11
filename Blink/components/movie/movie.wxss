@@ -1,0 +1,4 @@
+/* components/movie/movie.wxss */
+.movie{ display: flex;flex-direction: column; }
+.movie image{width: 750rpx;height: 500rpx;}
+.movie .movie-icon{width: 46rpx;height: 142rpx;margin-top: -55rpx;margin-left: 50rpx; }

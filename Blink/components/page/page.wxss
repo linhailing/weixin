@@ -1,0 +1,4 @@
+/* components/page/page.wxss */
+.p{ display: flex;align-items: center;background: #ddd;padding: 20rpx 10rpx;justify-content:center;}
+.p image{ width: 23rpx;height: 34rpx; }
+.p text{ font-size: 28rpx;width: 80%;text-align: center; }

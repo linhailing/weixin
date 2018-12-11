@@ -1,0 +1,5 @@
+<!--components/movie/movie.wxml-->
+<view class="movie">
+    <image src="images/movie.png" />  
+    <image class="movie-icon" src="images/movie_icon.png"/>  
+</view>

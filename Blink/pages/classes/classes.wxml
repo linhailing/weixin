@@ -1,0 +1,18 @@
+<!--pages/classes.wxml-->
+<view class="classes">
+    <view class="classes-header">
+        <cmp_times/>
+        <cmp_like/>
+    </view>
+    <view class="classes-body">
+        <cmp_movie/>
+        <view class="body-title">
+            <text>人生不能像做菜，把所有的料准备好了才下锅。</text>
+        </view>
+    </view>
+    <view class="classes-footer">
+        <cmp_page/>
+    </view>
+</view>
+
+

@@ -1,0 +1,4 @@
+/* components/like/like/like.wxss */
+.like{display: inline-flex;padding: 10rpx;}
+.like image{ width: 32rpx;height: 28rpx; }
+.like text{ font-size: 28rpx;color: #dddddd;position: relative;bottom: 10rpx;left: 5rpx; }

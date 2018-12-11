@@ -1,0 +1,6 @@
+/* pages/classes.wxss */
+.classes{}
+.classes .classes-header{ display: flex; justify-content: space-between;margin: 0 20rpx; }
+.classes .classes-body{}
+.classes .classes-body .body-title{padding: 50rpx;font-size: 48rpx;color: #ddd;}
+.classes .classes-footer{ margin: 0 50rpx; }
