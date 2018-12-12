@@ -1,3 +1,8 @@
+import {Classes} from "../../models/classes.js";
+import {Like} from "../../models/like.js";
+
+let ClassesModel = new Classes();
+let LikeModel = new Like();
 // pages/classes.js
 Page({
 
@@ -5,27 +10,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    classic : null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    /**
-    wx.request({
-      url: 'http://hb.xiaougame.com/mobile/articles', // 仅为示例，并非真实的接口地址
-      data: {
-        token: "8OjOhjd0yYC1TTPteIMJgjz1HDFVN3n0Tv6FgJoSdD6NPgPogfIaLdY8JqNGebsmaJMjmOJX.ouieiecW..jgg!!"
-      },
-      method: "get",
-      dataType: "json",
-      success(res) {
-        console.log(res.data)
-      }
-    })
-     */
+    ClassesModel.getClassesInfo((res)=>{
+      this.setData({
+        classic : res.info
+      })
+    });
   },
+
+  onLike:function(event){
+    console.log(event)
+    let behavior = event.detail.behavior
+    LikeModel.getLike(this.data.classic.id);
+  },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成

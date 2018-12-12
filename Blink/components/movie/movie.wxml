@@ -1,5 +1,6 @@
 <!--components/movie/movie.wxml-->
 <view class="movie">
-    <image src="images/movie.png" />  
-    <image class="movie-icon" src="images/movie_icon.png"/>  
+    <image src="{{src}}" />
+    <image class="movie-icon" src="images/movie_icon.png"/>
+    <text class="content">{{content}}</text>
 </view>

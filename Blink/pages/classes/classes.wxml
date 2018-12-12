@@ -2,13 +2,10 @@
 <view class="classes">
     <view class="classes-header">
         <cmp_times/>
-        <cmp_like/>
+        <cmp_like  bind:like="onLike" like="{{classic.like_status}}" count="{{classic.fav_nums}}"/>
     </view>
     <view class="classes-body">
-        <cmp_movie/>
-        <view class="body-title">
-            <text>人生不能像做菜，把所有的料准备好了才下锅。</text>
-        </view>
+        <cmp_movie src="{{classic.image}}" content="{{classic.content}}"/>
     </view>
     <view class="classes-footer">
         <cmp_page/>
