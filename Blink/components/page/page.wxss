@@ -1,4 +1,4 @@
 /* components/page/page.wxss */
-.p{ display: flex;align-items: center;background: #ddd;padding: 20rpx 10rpx;justify-content:center;}
-.p image{ width: 23rpx;height: 34rpx; }
-.p text{ font-size: 28rpx;width: 80%;text-align: center; }
+.p{ width:600rpx;height:80rpx;background-color: #f7f7f7;border-radius:2px;display:inline-flex;flex-direction: row;justify-content: space-between;align-items: center;}
+.p .icon{ width: 80rpx;height: 80rpx; }
+.p text{ font-size:28rpx;}

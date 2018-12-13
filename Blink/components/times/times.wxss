@@ -1,8 +1,9 @@
 /* components/times/times.wxss */
-.times{display: inline-flex;justify-content: flex-end;}
-.times .times-title{ border-right: 1px solid #eee;padding-right: 5px;}
-.times .times-title .times-no{ font-size: 28rpx;color: #dddddd; }
-.times .times-title .times-num{ font-size: 48rpx;color: black; }
-.times .times-date{display: flex;flex-direction: column;margin-left: 10rpx;}
-.times .times-date .date-mouth{ font-size: 30rpx;color:  black; }
-.times .times-date .date-year{ font-size: 24rpx;color: #dddddd; }
+.times{display: inline-flex;height: 60rpx;}
+.times .times-title{display: flex;align-items: baseline;}
+.times .times-title .times-no{ font-size: 32rpx; }
+.times .times-title .times-num{ height: 60rpx;line-height: 60rpx;font-weight: 800;margin-right: 14rpx; }
+.times .times-title .line{ height: 44rpx;border-right: 1px solid black;margin-right: 14rpx; }
+.times .times-date{display: flex;flex-direction: column;height: 60rpx;}
+.times .times-date .date-mouth{ font-size: 24rpx; }
+.times .times-date .date-year{ font-size: 20rpx;line-height: 20rpx; }

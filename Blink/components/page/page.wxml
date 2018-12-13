@@ -1,6 +1,6 @@
 <!--components/page/page.wxml-->
 <view class="p">
-    <image src="images/left.png" bind:tap="onClickLeft" />
-    <text>李安《饮食男女》</text>
-    <image src="images/right.png" bind:tap="onClickRight" />
+    <image class="icon" src="{{left ? leftSrc : leftSrcDis }}" bind:tap="onClickLeft" />
+    <text class="title">{{title}}</text>
+    <image class="icon" src="{{right ? rightSrc : rightSrcDis }}" bind:tap="onClickRight" />
 </view>

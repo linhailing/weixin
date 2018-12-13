@@ -4,14 +4,19 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    right:Boolean,
+    left: Boolean,
+    title: String
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-
+    leftSrc: 'images/triangle@left.png',
+    leftSrcDis: 'images/triangle.dis@left.png',
+    rightSrc: 'images/triangle@right.png',
+    rightSrcDis: 'images/triangle.dis@right.png'
   },
 
   /**

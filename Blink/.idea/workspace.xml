@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75375102-5220-4a56-8043-1e2c5d9824e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/like/like/like.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/like/like/like.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/movie/movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/movie/movie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/movie/movie.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/movie/movie.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/movie/movie.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/components/movie/movie.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/classes/classes.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/classes/classes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/page/images/left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/page/images/right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/page/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/page/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/page/page.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/page/page.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/page/page.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/components/page/page.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/times/times.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/times/times.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/times/times.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/components/times/times.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/classes/classes.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/classes/classes.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/classes/classes.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/classes/classes.wxss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,47 +23,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/like/like/like.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" selection-start-line="1" selection-end-line="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/like.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/classes/classes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="30" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/utils/http.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -83,11 +46,17 @@
         <option value="$PROJECT_DIR$/components/movie/movie.js" />
         <option value="$PROJECT_DIR$/config.js" />
         <option value="$PROJECT_DIR$/models/classes.js" />
-        <option value="$PROJECT_DIR$/pages/classes/classes.wxml" />
         <option value="$PROJECT_DIR$/components/like/like/like.js" />
         <option value="$PROJECT_DIR$/models/like.js" />
         <option value="$PROJECT_DIR$/pages/classes/classes.js" />
         <option value="$PROJECT_DIR$/utils/http.js" />
+        <option value="$PROJECT_DIR$/components/times/times.wxml" />
+        <option value="$PROJECT_DIR$/components/times/times.wxss" />
+        <option value="$PROJECT_DIR$/components/page/page.wxss" />
+        <option value="$PROJECT_DIR$/pages/classes/classes.wxss" />
+        <option value="$PROJECT_DIR$/components/page/page.wxml" />
+        <option value="$PROJECT_DIR$/components/page/page.js" />
+        <option value="$PROJECT_DIR$/pages/classes/classes.wxml" />
       </list>
     </option>
   </component>
@@ -103,6 +72,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,40 +83,12 @@
             <path>
               <item name="Blink" type="b2602c69:ProjectViewProjectNode" />
               <item name="Blink" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Blink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blink" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="like" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Blink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blink" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Blink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blink" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Blink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blink" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Blink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blink" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -178,16 +120,16 @@
       <option name="presentableId" value="Default" />
       <updated>1544580650024</updated>
       <workItem from="1544580659541" duration="437000" />
-      <workItem from="1544581134611" duration="12119000" />
+      <workItem from="1544581134611" duration="12917000" />
+      <workItem from="1544664441125" duration="3952000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12556000" />
+    <option name="totallyTimeSpent" value="17306000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18163805" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -212,16 +154,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app.wxss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="864">
@@ -250,13 +183,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/movie/movie.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/movie/movie.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -268,13 +194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/classes/classes.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -292,27 +211,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/like/like/like.js">
+    <entry file="file://$PROJECT_DIR$/utils/http.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" selection-start-line="1" selection-end-line="42" />
+        <state relative-caret-position="555">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/classes/classes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="30" selection-end-column="4" />
+          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="30" selection-end-column="4" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/http.js">
+    <entry file="file://$PROJECT_DIR$/components/like/like/like.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="720">
+          <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/movie/movie.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/movie/movie.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/times/times.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/times/times.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/classes/classes.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="72" selection-start-line="2" selection-start-column="72" selection-end-line="2" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/page/page.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/page/page.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/page/page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/classes/classes.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>

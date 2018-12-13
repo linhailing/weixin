@@ -7,9 +7,7 @@
     <view class="classes-body">
         <cmp_movie src="{{classic.image}}" content="{{classic.content}}"/>
     </view>
-    <view class="classes-footer">
-        <cmp_page/>
-    </view>
+    <cmp_page class="classes-footer" title="{{classic.title}}"/>
 </view>
 
 
