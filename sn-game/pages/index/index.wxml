@@ -1,0 +1,138 @@
+<view class="container">
+  <!-- 标签切换 -->
+  <view class="top-tab">
+    <view class="top-tab-item {{currentTab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:key="{{item.id}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}" bindtap="currentTabClick">
+      {{item.title}}
+    </view>
+  </view>
+  <!-- 分类标签 -->
+  <view class="gtype-tab" hidden="{{currentTab!=1}}">
+    <view class="gtype-tab-item {{gtypeTab==idx ? 'gtype-tab-active' : ''}}" wx:for="{{gtypeList}}" wx:key="{{item.gid}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}" bindtap="gtypeTabClick">
+      {{item.name}}
+    </view>
+  </view>
+  <!-- 分享按钮 -->
+  <button class='share-button' open-type="share">
+    <image animation='{{shareAnimation}}' src='../../images/share.png' />
+  </button>
+  <!-- 列表 -->
+  <scroll-view class="container-body" scroll-y="true" bindscroll="scrollHandle" lower-threshold="20" bindscrolltolower="scrollLoading" bindscrolltoupper="onPullDownRefresh">
+    <!-- 精选列表 -->
+    <view class="game-list" hidden="{{currentTab!=0}}">
+      <navigator class="game-item" wx:for="{{gamelist}}" wx:key="{{item.gid}}" wx:for-item="item" target="miniProgram" open-type="navigate" app-id="{{item.appid}}" path="{{item.path}}" extra-data="{{item.extra}}" version="release">
+        <view class="game-item-image" data-gid="{{item.gid}}" data-jimg="{{item.jimg}}" data-appid="{{item.appid}}" bindtap="clickGameNavigator">
+          <image src="{{item.bimg}} " mode="aspectFill "></image>
+        </view>
+        <view class="game-item-info ">
+          <image class='game-item-icon' src='{{item.icon}}'></image>
+          <text class="game-item-name ">{{item.name}}</text>
+          <text class='game-item-btn'>马上玩</text>
+        </view>
+      </navigator>
+    </view>
+    <!-- 分类列表 -->
+    <view class="game-list-type" hidden="{{currentTab!=1}}">
+      <navigator class="game-list-item" wx:for="{{tgameList}}" wx:key="{{item.id}}" target="miniProgram" open-type="navigate" app-id="{{item.appid}}" path="{{item.path}}" extra-data="{{item.extra}}" version="release">
+        <view data-gid="{{item.gid}}" data-jimg="{{item.jimg}}" data-appid="{{item.appid}}" bindtap="clickGameNavigator">
+          <image class='game-list-icon' src='{{item.icon}}'></image>
+          <text class="game-list-name">{{item.name}}</text>
+          <text class="game-list-text">{{item.text}}</text>
+          <text class="game-list-glabel">{{item.glabel}}</text>
+          <view class='game-list-right'>
+            <image class='game-list-users-image' src="../../images/icon_role.png"></image>
+            <image class='game-list-score-image' src="../../images/icon_handle.png"></image>
+            <text class="game-list-users">{{item.users}}</text>
+            <text class="game-list-score ">{{item.score}}</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+    <!-- 排行列表 -->
+    <view class="game-list" hidden="{{currentTab!=2}}">
+      <view class="rank-swiper">
+        <swiper autoplay="true" interval="4000" duration="3000" circular="true">
+          <block wx:for="{{brankList}}" wx:key="{{item.gid}}">
+            <swiper-item class="swiper-item">
+              <navigator target="miniProgram" open-type="navigate" app-id="{{item.appid}}" path="{{item.path}}" extra-data="{{item.extra}}" version="release" data-gid="{{item.gid}}" data-jimg="{{item.jimg}}" data-appid="{{item.appid}}" bindtap="clickGameNavigator">
+                <image src="{{item.banner}}" />
+              </navigator>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+      <view class="rank-list">
+        <view class="rank-title">
+          <text class="rank-title-head">新游戏</text>
+          <navigator url='/pages/ranking/index?id=2'>
+            <text class="rank-title-skip">查看更多</text>
+            <image src="../../images/arrows.png" class="rank-title-image" />
+          </navigator>
+        </view>
+        <navigator class="game-list-item" wx:for="{{nrankList}}" wx:key="{{item.id}}" target="miniProgram" open-type="navigate" app-id="{{item.appid}}" path="{{item.path}}" extra-data="{{item.extra}}" version="release">
+          <view data-gid="{{item.gid}}" data-jimg="{{item.jimg}}" data-appid="{{item.appid}}" bindtap="clickGameNavigator">
+            <image class='game-list-icon' src='{{item.icon}}'></image>
+            <text class="game-list-name">{{item.name}}</text>
+            <text class="game-list-text">{{item.text}}</text>
+            <text class="game-list-glabel">{{item.glabel}}</text>
+            <view class='game-list-right'>
+              <image class='game-list-users-image' src="../../images/icon_role.png"></image>
+              <image class='game-list-score-image' src="../../images/icon_handle.png"></image>
+              <text class="game-list-users">{{item.users}}</text>
+              <text class="game-list-score">{{item.score}}</text>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="rank-list">
+        <view class="rank-title">
+          <text class="rank-title-head">热门榜</text>
+          <navigator url='/pages/ranking/index?id=3'>
+            <text class="rank-title-skip">查看更多</text>
+            <image src="../../images/arrows.png" class="rank-title-image" />
+          </navigator>
+        </view>
+        <navigator class="game-list-item" wx:for="{{hrankList}}" wx:key="{{item.id}}" target="miniProgram" open-type="navigate" app-id="{{item.appid}}" path="{{item.path}}" extra-data="{{item.extra}}" version="release">
+          <view data-gid="{{item.gid}}" data-jimg="{{item.jimg}}" data-appid="{{item.appid}}" bindtap="clickGameNavigator">
+            <image class='game-list-icon' src='{{item.icon}}'></image>
+            <text class="game-list-name">{{item.name}}</text>
+            <text class="game-list-text">{{item.text}}</text>
+            <text class="game-list-glabel">{{item.glabel}}</text>
+            <view class='game-list-right'>
+              <image class='game-list-users-image' src="../../images/icon_role.png"></image>
+              <image class='game-list-score-image' src="../../images/icon_handle.png"></image>
+              <text class="game-list-users">{{item.users}}</text>
+              <text class="game-list-score">{{item.score}}</text>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="rank-list">
+        <view class="rank-title">
+          <text class="rank-title-head">福利榜</text>
+          <navigator url='/pages/ranking/index?id=4'>
+            <text class="rank-title-skip ">查看更多</text>
+            <image src="../../images/arrows.png" class="rank-title-image" />
+          </navigator>
+        </view>
+        <navigator class="game-list-item" wx:for="{{wrankList}}" wx:key="{{item.id}}" target="miniProgram" open-type="navigate" app-id="{{item.appid}}" path="{{item.path}}" extra-data="{{item.extra}}" version="release">
+          <view data-gid="{{item.gid}}" data-jimg="{{item.jimg}}" data-appid="{{item.appid}}" bindtap="clickGameNavigator">
+            <image class='game-list-icon' src='{{item.icon}}'></image>
+            <text class="game-list-name">{{item.name}}</text>
+            <text class="game-list-text">{{item.text}}</text>
+            <text class="game-list-glabel">{{item.glabel}}</text>
+            <view class='game-list-right'>
+              <image class='game-list-users-image' src="../../images/icon_role.png"></image>
+              <image class='game-list-score-image' src="../../images/icon_handle.png"></image>
+              <text class="game-list-users">{{item.users}}</text>
+              <text class="game-list-score">{{item.score}}</text>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class="gototop {{scrolltop>1080?'active':''}}" bindtap="goToTop">
+      <!--<view class='gototop-text'>更多游戏 敬请期待！</view> -->
+      <view class='gototop-text'>版本 1.1.0</view>
+    </view>
+  </scroll-view>
+</view>

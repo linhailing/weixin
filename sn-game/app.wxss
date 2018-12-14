@@ -1,0 +1,134 @@
+/**app.wxss**/
+
+page {
+  height: 100%;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  background: #f1f5f4;
+  font: normal 30rpx/1.68 -apple-system-font,
+          'Helvetica Neue',
+          Helvetica,
+          'Microsoft YaHei',
+          sans-serif;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.container-body {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  top: 80rpx;
+}
+
+/**
+* 列表显示
+*/
+
+.game-list-type {
+  position: relative;
+  top: 80rpx;
+}
+
+.game-list-item {
+  width: 100%;
+  height: 190rpx;
+  background: #f0f7f5;
+  position: relative;
+}
+
+.game-list-icon {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 130rpx;
+  position: absolute;
+  top: 30rpx;
+  left: 30rpx;
+}
+
+.game-list-name {
+  position: absolute;
+  top: 25rpx;
+  left: 170rpx;
+  font-size: 34rpx;
+  color: #282828;
+  font-weight: bold;
+}
+
+.game-list-text {
+  position: absolute;
+  top: 80rpx;
+  left: 175rpx;
+  font-size: 26rpx;
+  color: #747474;
+}
+
+.game-list-glabel {
+  position: absolute;
+  top: 125rpx;
+  left: 175rpx;
+  font-size: 22rpx;
+  color: #a7a7a7;
+}
+
+.game-list-right {
+  position: absolute;
+  bottom: 0;
+  right: 30rpx;
+  width: 78%;
+  border-bottom: 1rpx solid #d1e0dd;
+}
+
+.game-list-users-image {
+  position: absolute;
+  bottom: 94rpx;
+  right: 150rpx;
+  width: 24rpx;
+  height: 35rpx;
+}
+
+.game-list-score-image {
+  position: absolute;
+  bottom: 44rpx;
+  right: 150rpx;
+  width: 26rpx;
+  height: 33rpx;
+}
+
+.game-list-users {
+  position: absolute;
+  bottom: 90rpx;
+  right: 20rpx;
+  font-size: 26rpx;
+  color: #f85f40;
+}
+
+.game-list-score {
+  position: absolute;
+  bottom: 40rpx;
+  right: 20rpx;
+  font-size: 22rpx;
+  color: #00b395;
+  border-radius: 8rpx;
+  border: 1rpx solid #00b395;
+  padding: 0px 12px 0px 12px;
+}
+
+.gototop {
+  margin: 0 auto;
+}
+
+.gototop-text {
+  width: 100%;
+  color: #a7a7a7;
+  font-size: 24rpx;
+  margin: 0 auto;
+  text-align: center;
+}

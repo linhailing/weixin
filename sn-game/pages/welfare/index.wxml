@@ -1,0 +1,40 @@
+<view class="container">
+  <image class='image-light' src='../../images/light.png'> </image>
+  <block wx:if="{{!openRedPacket}}">
+    <text class='tips-text'>从我的小程序中进入，即可抽红包</text>
+    <image class='image-tip' src='../../images/tip.png'></image>
+    <image class='red-packet' src='../../images/red_packet.png'>
+      <button class='red-packet-open-btn' open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+        <image class='image-btn' src='../../images/btn.png'></image>
+        <text class='image-btn-text'>立即抽红包</text>
+      </button>
+    </image>
+    <image class='image-help' src='../../images/help.png'></image>
+    <text class='image-help-text'>帮助</text>
+    <view class='help-view-text'>
+      <text>● 点击右上角...\n● 点击添加到我的小程序\n● 每天可抽取一次红包\n● 参与越多游戏，获得大额红包概率越高</text>
+    </view>
+  </block>
+  <block wx:else>
+    <text class='tips-text'>将红包发给7位好友，领完即享红包翻倍！</text>
+    <image class='red-packet-open' src='../../images/red_packet_opne.png'></image>
+    <text class='red-packet-value'>{{redpack}}</text>
+    <view wx:if="{{shareValue < 6}}">
+      <button class='red-packet-btn' open-type='share'>
+        <image class='image-btn' src='../../images/btn.png'></image>
+        <text class='image-btn-text'>红包翻倍</text>
+      </button>
+    </view>
+    <block wx:else>
+      <text class='red-packet-text'>红包已翻倍存入我的余额</text>
+    </block>
+    <image class='image-help' src='../../images/help.png'></image>
+    <text class='image-help-text'>已领取</text>
+    <view class='list-view'>
+      <image wx:for="{{newlist}}" wx:if="{{index < 8}}" wx:key=" {{item.uid}} " src='{{item.avatar}}' />
+    </view>
+    <view class='help-view'>
+      <text>红包已拆开，24点将自动存入我的余额\n红包被好友领完，红包将翻倍存入我的余额</text>
+    </view>
+  </block>
+</view>

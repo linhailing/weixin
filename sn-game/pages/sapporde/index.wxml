@@ -1,0 +1,6 @@
+<!-- pages/sapporde/index.wxml -->
+<view>
+  <image class='icon-image' src='{{iconImage}}' />
+  <view class='money-text'>￥{{money}}</view>
+  <button class='buy-button' open-type="clickPayButton" bindtap="clickPayButton">充 值</button>
+</view>

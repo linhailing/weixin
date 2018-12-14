@@ -1,0 +1,146 @@
+/* pages/welfare/index.wxss */
+
+.container {
+  /*设置背景渐变色*/
+  background: linear-gradient(#ff924f, #fe4741);
+  overflow: hidden;
+}
+
+.tips-text {
+  margin: 60rpx auto;
+  top: 5%;
+  left: 20%;
+  font-size: 34rpx;
+  color: #fcd9cd;
+}
+
+.image-light {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 640rpx;
+  height: 676rpx;
+}
+
+.image-tip {
+  position: absolute;
+  top: 12%;
+  left: 70%;
+  width: 146rpx;
+  height: 104rpx;
+}
+
+.red-packet {
+  position: absolute;
+  top: 20%;
+  left: 28%;
+  width: 348rpx;
+  height: 466rpx;
+}
+
+.red-packet-open {
+  position: absolute;
+  top: 20%;
+  left: 28%;
+  width: 348rpx;
+  height: 502rpx;
+}
+
+.red-packet-open-btn {
+  position: absolute;
+  top: 62%;
+  left: 7%;
+  width: 300rpx;
+  height: 74rpx;
+}
+
+.red-packet-value {
+  position: absolute;
+  top: 29%;
+  left: 50%;
+  color: #ff1e2e;
+  font-size: 50rpx;
+  font-weight: bold;
+}
+
+.red-packet-btn {
+  position: absolute;
+  top: 51%;
+  left: 32%;
+  width: 300rpx;
+  height: 74rpx;
+}
+
+.red-packet-text {
+  position: absolute;
+  top: 55%;
+  left: 33%;
+  color: #f69491;
+  font-size: 26rpx;
+  font-weight: bold;
+}
+
+.image-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300rpx;
+  height: 74rpx;
+}
+
+.image-btn-text {
+  position: absolute;
+  font-size: 34rpx;
+  top: -8%;
+  left: 24%;
+  color: #ff1e2e;
+  font-weight: bold;
+}
+
+.image-help {
+  position: absolute;
+  top: 75%;
+  left: 7.5%;
+  width: 636rpx;
+  height: 34rpx;
+}
+
+.image-help-text {
+  position: absolute;
+  width: 100%;
+  color: #ffff;
+  font-size: 40rpx;
+  top: 73.5%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.help-view-text {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  left: 10%;
+  text-align: left;
+  color: #fcc9bb;
+}
+
+.help-view {
+  position: absolute;
+  width: 100%;
+  top: 88%;
+  text-align: center;
+  color: #fcc9bb;
+}
+
+.list-view {
+  position: absolute;
+  width: 100%;
+  top: 79%;
+  left: 2rpx;
+}
+
+.list-view image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 6rpx;
+}

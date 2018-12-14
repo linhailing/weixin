@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="userinfo">
+    <button class="userinfo-login" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+      登录
+    </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <view class='userinfo-balance'>
+        <text>红包余额：{{redpack}}</text>
+        <text class='userinfo-balance-text' bindtap='getBalance'>提现</text>
+      </view>
+    </block>
+  </view>
+  <view class="my-games">
+    <text class='my-games-text '>我的游戏</text>
+    <scroll-view class="my-scroll" scroll-x>
+      <navigator wx:for="{{gamelist}}" wx:key="{{item.gid}}" target="miniProgram" open-type="navigate" app-id="{{item.appid}}" path="{{item.path}}" extra-data="{{item.extra}}" version="release">
+        <view class='my-game-item' data-gid="{{item.gid}}" data-jimg="{{item.jimg}}" data-appid="{{item.appid}}" bindtap="clickGameNavigator">
+          <image class='game-item-icon' src='{{item.icon}}' />
+          <text class="game-item-name ">{{item.name}}</text>
+        </view>
+      </navigator>
+    </scroll-view>
+  </view>
+  <navigator class='contactus' url='/pages/contactus/index'>
+    <text class='contactus_text'>联系我们</text>
+    <image src="../../images/arrows.png" />
+  </navigator>
+</view>

@@ -1,0 +1,21 @@
+/* pages/ranking/index.wxss */
+
+.top-title {
+  width: 100%;
+  line-height: 80rpx;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+.top-title  text {
+  width: 100%;
+  background: #fff;
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #f85f40;
+  position: absolute;
+  text-align: center;
+}

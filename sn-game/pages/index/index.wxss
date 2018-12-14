@@ -1,0 +1,207 @@
+.share-button {
+  position: absolute;
+  top: 80%;
+  left: -30rpx;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 3;
+}
+
+.share-button::after {
+  border: none;
+}
+
+.share-button image {
+  position: relative;
+  width: 232rpx;
+  height: 86rpx;
+  top: 20rpx;
+}
+
+/**
+* 顶部tab 
+*/
+
+.top-tab {
+  width: 100%;
+  display: flex;
+  line-height: 80rpx;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.top-tab-item {
+  width: 33%;
+  color: #848487;
+  text-align: center;
+}
+
+.active {
+  color: #f85f40;
+}
+
+/**
+* 精选列表
+* 居中 高670 宽570 圆角30 背景色#f0f7f5 
+* 投影90° 3像素 大小13 
+*/
+
+.game-item {
+  width: 84%;
+  height: 50%;
+  background: #f0f7f5;
+  border-radius: 20px;
+  box-shadow: #d3dbd9 1px 1px 2px 3px; /** box-shadow 边框阴影 **/
+  margin: 20px auto; /** 对齐方式 **/
+}
+
+.game-item-image {
+  width: 100%;
+  height: 670rpx;
+}
+
+.game-item-image image {
+  position: relative;
+  top: 0rpx;
+  width: 100%;
+  border-radius: 30rpx 30rpx 0 0;
+  height: 670rpx;
+}
+
+/**
+* 精选内容
+*/
+
+.game-item-info {
+  width: 100%;
+  height: 120rpx;
+  background: #fff;
+  border-radius: 0px 0px 20px 20px;
+  position: relative;
+}
+
+.game-item-icon {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  position: relative;
+  top: 20rpx;
+  left: 20rpx;
+}
+
+.game-item-name {
+  position: relative;
+  top: -15rpx;
+  left: 50rpx;
+  font-size: 30rpx;
+  color: #282828;
+}
+
+.game-item-btn {
+  position: absolute;
+  background: #01c0a0;
+  padding: 12rpx 50rpx;
+  top: 24rpx;
+  right: 50rpx;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 20px 20px 20px 20px;
+}
+
+/**
+* 分类列表
+*/
+
+.gtype-tab {
+  position: fixed;
+  top: 80rpx;
+  width: 100%;
+  height: 73rpx;
+  display: flex;
+  color: #333;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  font-weight: 300;
+  padding: 10rpx 0rpx 10rpx;
+  z-index: 2;
+}
+
+.gtype-tab-item {
+  color: #00b395;
+  text-align: center;
+  background: #e9f3f1;
+  font-size: 24rpx;
+  border-radius: 20px 20px 20px 20px;
+  padding: 10rpx 30rpx;
+  margin: 0 auto;
+}
+
+.gtype-tab-active {
+  color: #fcffee;
+  background: #01c0a0;
+}
+
+/**
+* 排行banner
+*/
+
+.rank-swiper {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  height: 250rpx;
+}
+
+.swiper-item {
+  height: auto;
+  display: block;
+  left: 65rpx;
+}
+
+.swiper-item image {
+  width: 620rpx;
+  height: 250rpx;
+  border-radius: 8rpx;
+}
+
+.rank-list {
+  position: relative;
+  margin: 0 0 20rpx 0;
+  background: #fff;
+  box-shadow: #d3dbd9 1px 2px 1px 0px;
+  width: 100%;
+}
+
+.rank-title {
+  width: 100%;
+  height: 100rpx;
+  position: relative;
+}
+
+.rank-title-head {
+  position: absolute;
+  top: 25rpx;
+  left: 40rpx;
+  font-size: 34rpx;
+  color: #282828;
+  font-weight: bold;
+}
+
+.rank-title-skip {
+  position: absolute;
+  top: 30rpx;
+  right: 80rpx;
+  font-size: 26rpx;
+  color: #f85f40;
+}
+
+.rank-title-image {
+  position: absolute;
+  bottom: 40rpx;
+  right: 50rpx;
+  width: 24rpx;
+  height: 24rpx;
+}
