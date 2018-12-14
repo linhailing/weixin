@@ -4,16 +4,15 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true,
-		"autoAudits": false
+		"newFeature": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.2.5",
-	"appid": "wx2181124ff9d5ed79",
+	"appid": "wx73b078ac82fa9d80",
 	"projectname": "sn-game",
 	"isGameTourist": false,
 	"condition": {

@@ -72,7 +72,7 @@ App({
   },
 
   onShow: function (res) {
-    console.log('onShow start')
+    console.log('onShow')
     console.log(res);
     //每次小程序启动，或从后台进入前台显示时
     //判断场景值  红包分享进入强制登录
@@ -84,23 +84,18 @@ App({
         console.log('红包分享进入')
         this.globalData.shareSid = res.query.sid;
       }
+      if (this.globalData.token === null) {
+        return;
+      }
       //重新拉取一次服务器数据
       let that = this;
       //获取游戏数据
       that.wxRequest('games', {
         'token': that.globalData.token
       }, data => {
-        console.log('game....')
-        console.log(data)
         that.globalData.games = data.games;
       });
-      console.log("token",this.globalData.token);
-      if (this.globalData.token === null) {
-        return;
-      }
-
     }
-    console.log('onShow end...')
   },
   //分享内容
   getShare: function () {
@@ -132,7 +127,6 @@ App({
             "code": dt.code,
             "ab": that.globalData.adFrom,
           }, data => {
-            console.log(data)
             that.globalData.games = data.auth.games;
             that.globalData.token = data.auth.token;
             that.globalData.userInfo = data.auth.user;
@@ -157,7 +151,6 @@ App({
       data: dt,
       success: function (res) {
         wx.hideLoading();
-        console.log('res', res)
         console.log(res.data);
         typeof cb == "function" && cb(res.data)
       },
@@ -165,7 +158,7 @@ App({
         wx.hideLoading();
         wx.showModal({
           title: '网络错误',
-          content: '网络出错，请刷新重试1',
+          content: '网络出错，请刷新重试',
           showCancel: false
         })
       },
