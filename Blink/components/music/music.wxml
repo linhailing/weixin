@@ -1,0 +1,7 @@
+<!--components/music/music.wxml-->
+<view class="container">
+  <image class="img" src="{{img}}" />
+  <image class="play-img" bind:tap="onPlay" src="{{playImg}}"/>
+  <image class="img-tag" src="{{iconSrc}}"/>
+  <text class="content">{{content}}</text>
+</view>

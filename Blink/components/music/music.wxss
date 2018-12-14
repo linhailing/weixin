@@ -1,0 +1,5 @@
+.container{display: flex;flex-direction: column;align-items: center;}
+.container .img{ width: 422rpx;height: 422rpx;border-radius: 50%;margin-top: 60rpx; }
+.container .play-img{ width: 120rpx;height: 120rpx;position: relative;bottom: 270rpx;}
+.container .img-tag {width: 44rpx;height: 128rpx;position: relative;right:310rpx;bottom: 160rpx; }
+

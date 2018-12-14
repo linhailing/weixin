@@ -3,6 +3,7 @@
         "cmp_like" : "/components/like/like/like",
         "cmp_times" : "/components/times/times",
         "cmp_movie" : "/components/movie/movie",
-        "cmp_page" : "/components/page/page"
+        "cmp_page" : "/components/page/page",
+        "v-music" : "/components/music/music"
     }
 }
