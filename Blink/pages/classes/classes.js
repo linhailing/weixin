@@ -19,7 +19,7 @@ Page({
   onLoad: function (options) {
     ClassesModel.getClassesInfo((res)=>{
       this.setData({
-        classic : res.info
+        classic : res.list
       })
     });
   },

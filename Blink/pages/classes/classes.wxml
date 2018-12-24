@@ -1,12 +1,12 @@
 <!--pages/classes.wxml-->
 <view class="classes">
     <view class="classes-header">
-        <cmp_times/>
+        <cmp_times index="{{classic.index}}"/>
         <cmp_like  bind:like="onLike" like="{{classic.like_status}}" count="{{classic.fav_nums}}"/>
     </view>
     <view class="classes-body">
-        <!--<cmp_movie src="{{classic.image}}" content="{{classic.content}}"/>-->
-        <v-music/>
+        <cmp_movie src="{{classic.image}}" content="{{classic.content}}"/>
+        <!--<v-music/>-->
     </view>
     <cmp_page class="classes-footer" title="{{classic.title}}"/>
 </view>

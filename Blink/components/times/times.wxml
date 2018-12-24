@@ -2,7 +2,7 @@
 <view class="times">
     <view class="times-title">
         <text class="times-no">No.</text>
-        <text class="times-num">17</text>
+        <text class="times-num">{{index}}</text>
         <view class="line"></view>
     </view>
     <view class="times-date">
